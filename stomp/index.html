@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>STOMP | Showing you the real side of Singapore</title>
+
+      <!--Bootstrap core CSS-->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+      <!-- Custom styles for this template -->
+
+      <link href="css/custom.css" rel="stylesheet">
+      <link href="css/responsive-style.css" rel="stylesheet">  
+      <link href="css/weather-icons.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+      <link href="css/lightbox.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/loaders.css"/>
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+      <style></style>
+      </head>
+
+      <body>
+<header>
+        <div class="small-top">
+    <div class="container">
+            <div class="col-lg-4 date-sec hidden-sm-down">
+        <div id="Date"></div>
+      </div>
+            <div class="col-lg-4 offset-lg-4">
+        <div class="social-icon"> <a target="_blank" href="#" class=" fa fa-facebook"></a> <a target="_blank" href="#" class=" fa fa-twitter"></a> <a target="_blank" href="#" class=" fa fa-google-plus"></a> <a target="_blank" href="#" class=" fa fa-youtube"></a><a target="_blank" href="#" class=" fa fa-whatsapp"></a><a target="_blank" href="#" class=" fa fa-android"></a> <a target="_blank" href="#" class=" fa fa-apple"></a> </div>
+      </div>
+          </div>
+  </div>
+        <div class="top-head left">
+    <div class="container">
+            <div class="row">
+        <div class="col-md-6 col-lg-4">
+                <div class="logo">
+                    <a href="#"><img src="img/logo.svg"></a>
+                </div>
+              </div>
+        <div class="col-md-6 col-lg-5 offset-lg-3 admin-bar hidden-sm-down">
+                <nav class="nav nav-inline"> <a href="#" class="nav-link"><span class="ping"></span><i class="fa fa-bell-o"></i></a> <a href="#" class="nav-link"><i class="fa fa-pencil"></i></a> <a href="#" class="nav-link">Jessica<img class="img-fluid img-circle" src="img/admin-bg.jpg"></a> </nav>
+              </div>
+      </div>
+          </div>
+  </div>
+      </header>
+<nav class="navbar top-nav">
+        <div class="container">
+    <button class="navbar-toggler hidden-lg-up pull-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation"> &#9776; </button>
+    <div class="collapse navbar-toggleable-md" id="exCollapsingNavbar2"> <a class="navbar-brand" href="#">Responsive navbar</a>
+            <ul class="nav navbar-nav ">
+        <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="singapore-dn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Singapore Seen</a>
+            <ul class="dropdown-menu" aria-labelledby="singapore-dn">
+                <li><a href="#">Singapore</a></li>
+                <li><a href="#">Lost & found</a></li>
+                <li><a href="#">Get inspired</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Most Viewed</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Youthphoria</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Realife</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">More</a> </li>
+        
+      </ul>
+
+
+            <form class="pull-xs-right">
+        <div class="search">
+                <button type="submit" class="btn btn-search"><i class="fa fa-filter"></i></button>
+              </div>
+      </form>
+          </div>
+  </div>
+      </nav>
+<section class="banner-sec">
+        <div class="container">
+            <div class="row search-full"><!-- search -->
+              <div class="col-lg-12">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
+                  </span>
+                </div><!-- /input-group -->
+              </div>
+            </div><!-- /.row -->
+    <div class="row">
+            <div class="col-md-3">
+        <div class="card"> <img class="img-fluid" src="img/media-1.jpg" alt="">
+                <div class="card-img-overlay"> <span class="tag tag-pill tag-danger">Singapore</span> </div>
+                <div class="card-block">
+            <div class="news-title">
+                    <h2 class=" title-small"><a href="#">Fire breaks out at Marine Parade Food Centre stall: Firefighters had to cut open shutter</a></h2>
+                  </div>
+            <p class="card-text"><small class="text-time"><em>3 mins ago</em></small></p>
+          </div>
+              </div>
+        <div class="card"> <img class="img-fluid" src="http://img.stomp.com.sg/s3fs-public/styles/500_height/public/images/2016/12/lele-main.jpg?itok=2qC5Ad4x" alt="">
+                <div class="card-img-overlay"> <span class="tag tag-pill tag-info">Get Inspired</span> </div>
+                <div class="card-block">
+            <div class="news-title">
+                    <h2 class=" title-small"><a href="#">Moving past low PSLE scores: Defining success differently</a></h2>
+                  </div>
+            <p class="card-text"><small class="text-time"><em>3 mins ago</em></small></p>
+          </div>
+              </div>
+      </div>
+            <div class="col-md-3">
+        <div class="card"> <img class="img-fluid" src="http://img.stomp.com.sg/s3fs-public/styles/500_height/public/images/2016/12/itegoogle.jpg?itok=O-3mRdED" alt="">
+                <div class="card-img-overlay"> <span class="tag tag-pill tag-info">Get Inspired</span> </div>
+                <div class="card-block">
+            <div class="news-title">
+                    <h2 class=" title-small"><a href="#">ITE student making strides at Google</a></h2>
+                  </div>
+            <p class="card-text"><small class="text-time"><em>3 mins ago</em></small></p>
+          </div>
+              </div>
+        <div class="card"> <img class="img-fluid" src="http://www.stomp.com.sg/s3/files/styles/500_height/public/images/2016/12/nursing-home_0.jpg?itok=-Wb7LVR1" alt="">
+                <div class="card-img-overlay"> <span class="tag tag-pill tag-danger">Around the World</span> </div>
+                <div class="card-block">
+            <div class="news-title">
+                    <h2 class=" title-small"><a href="#">Suzhou nursing home offered cash incentives to children to visit parents and it worked wonders</a></h2>
+                  </div>
+            <p class="card-text"><small class="text-time"><em>3 mins ago</em></small></p>
+          </div>
+              </div>
+      </div>
+            <div class="col-md-6 top-slider">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+                
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner carousel slide" role="listbox">
+            <div class="carousel-item active">
+                    <div class="news-block">
+                <div class="news-media"><img class="img-fluid" src="http://img.stomp.com.sg/s3fs-public/styles/article_detail_fi_breakpoints_theme_bootstrap_screen-md-min_1x/public/images/2016/11/army_0.jpg?itok=dugF2any" alt=""></div>
+                        
+                <div class="news-title">
+                        <h2 class=" title-large"><a href="#">Hot SAF soldier gives tips to all army newbies and goes viral</a></h2>
+                      </div>
+                <div class="news-des">Corporal First Class Kife Wee has been Operationally Ready for Deployment (ORD) for ten months.</div>
+                
+                <div></div>
+              </div>
+                  </div>
+            <div class="carousel-item">
+                    <div class="news-block">
+                <div class="news-media"><img class="img-fluid" src="http://img.stomp.com.sg/s3fs-public/styles/article_detail_fi_breakpoints_theme_bootstrap_screen-md-min_1x/public/images/2016/11/gold.jpg?itok=u_CeIfxL" alt=""></div>
+                <div class="news-title">
+                        <h2 class=" title-large"><a href="#">20-year-old girl receives 20kg of gold after getting married to 70-year-old billionaire</a></h2>
+                      </div>
+                <div class="news-des">A 20-year-old woman got married to a 70-year-old billionaire and received 20kg of gold during the wedding ceremony, but she looked unhappy and unfazed by the whole ceremony.</div>
+                <div class="time-text"><strong>2h ago</strong></div>
+                <div></div>
+              </div>
+                  </div>
+            <div class="carousel-item">
+                    <div class="news-block">
+                <div class="news-media"><img class="img-fluid" src="http://img.stomp.com.sg/s3fs-public/styles/article_detail_fi_breakpoints_theme_bootstrap_screen-md-min_1x/public/images/2016/11/man-crushed-between-vehicles-after-accident-involving-2-lorries-and-2-trucks-along-the-sle.jpg?itok=dl6OVGUk" alt=""></div>
+                <div class="news-title">
+                        <h2 class=" title-large"><a href="#">Man crushed between 2 lorries after horrific accident on SLE</a></h2>
+                      </div>
+                <div class="news-des">Stomper Marcus alerted Stomp to an accident involving four lorries that had occurred on the SLE today (Nov 5) at around 12.11pm where 4 people had to be conveyed to hospital.</div>
+                <div class="time-text"><strong>2h ago</strong></div>
+                <div></div>
+              </div>
+                  </div>
+          </div>
+              </div>
+      </div>
+          </div>
+  </div>
+      </section>
+<section class="section-01">
+        <div class="container">
+    <div class="row">
+            <div class="col-lg-8 col-md-12">
+        <h3 class="heading-large">Singapore Seen</h3>
+        <div class="row">
+                <div class="col-lg-6">
+            <div class="card"> <img class="img-fluid" src="http://img.stomp.com.sg/s3fs-public/styles/500_height/public/images/2016/12/e-scooter-mainz.jpg?itok=vJInJAI2" alt="">
+                    <div class="card-block">
+                <div class="news-title"><a href="#">
+                  <h2 class=" title-small">Think what your grandfather road ah?</h2>
+                  </a></div>
+                <p class="card-text">Stomper Ron was driving on Saturday (Dec 3)  at around 5.40pm when he noticed the most reckless e-scooter rider.</p>
+                <p class="card-text"><small class="text-time"><em>3 mins ago</em></small></p>
+              </div>
+                  </div>
+          </div>
+                <div class="col-lg-6">
+            <div class="card"> <img class="img-fluid" src="http://img.stomp.com.sg/s3fs-public/styles/500_height/public/images/2016/12/busstopunclepayforsinglemother.jpg?itok=fE5ro8dw" alt="">
+                    <div class="card-block">
+                <div class="news-title"><a href="#">
+                  <h2 class=" title-small">Help from a stranger turns her life around</h2>
+                  </a></div>
+                <p class="card-text">Things were looking bleak but a chance meeting with a stranger.</p>
+                <p class="card-text"><small class="text-time"><em>3 mins ago</em></small></p>
+              </div>
+                  </div>
+          </div>
+                <div class="col-lg-6">
+            <div class="card"> <img class="img-fluid" src="http://img.stomp.com.sg/s3fs-public/styles/500_height/public/images/2016/12/maybank-mainz.jpg?itok=QiRke5K9" alt="">
+                    <div class="card-block">
+                <div class="news-title"><a href="#">
+                  <h2 class=" title-small">Everyone wants to open an account in Msia's Maybank thanks to this beautiful and kind employee</h2>
+                  </a></div>
+                <p class="card-text">Visiting the bank is often a bad experience.</p>
+                <p class="card-text"><small class="text-time"><em>3 mins ago</em></small></p>
+              </div>
+                  </div>
+          </div>
+                <div class="col-lg-6">
+            <div class="card"> <img class="img-fluid" src="http://img.stomp.com.sg/s3fs-public/styles/article_detail_fi_breakpoints_theme_bootstrap_screen-md-min_1x/public/images/2016/12/singtel-final.jpg?itok=Pj7NqXjX" alt="">
+                    <div class="card-block">
+                <div class="news-title"><a href="#">
+                  <h2 class=" title-small">Think what your grandfather road ah?</h2>
+                  </a></div>
+                <p class="card-text">Stomper Ron was driving on Saturday (Dec 3)  at around 5.40pm when he noticed the most reckless e-scooter rider.</p>
+                <p class="card-text"><small class="text-time"><em>3 mins ago</em></small></p>
+              </div>
+                  </div>
+          </div>
+              </div>
+      </div>
+            <aside class="col-lg-4 side-bar col-md-12">
+        <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Latest</a> </li>
+                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Top</a> </li>
+                <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Featured</a> </li>
+              </ul>
+        
+        <!-- Tab panes -->
+        <div class="tab-content sidebar-tabing">
+                <div class="tab-pane active" id="home" role="tabpanel">
+            <div class="media"> <a class="media-left" href="#"> <img class="media-object" src="http://img.stomp.com.sg/s3fs-public/styles/500_height/public/images/2016/12/lele-main.jpg?itok=2qC5Ad4x" alt=""> </a>
+                    <div class="media-body">
+                <div class="news-title">
+                        <h2 class="title-small"><a href="#">Defining success differently</a></h2>
+                      </div>
+                <div class="news-auther"><span class="time">1h ago</span></div>
+              </div>
+                  </div>
+            <div class="media"> <a class="media-left" href="#"> <img class="media-object" src="http://img.stomp.com.sg/s3fs-public/styles/article_detail_fi_breakpoints_theme_bootstrap_screen-md-min_1x/public/images/2016/12/cake.jpg?itok=TOhcEG1S" alt=""> </a>
+                    <div class="media-body">
+                <div class="news-title">
+                        <h2 class="title-small"><a href="#">Girl ruins her own birthday by throwing cake on the floor</a></h2>
+                      </div>
+                <div class="news-auther"><span class="time">1h ago</span></div>
+              </div>
+                  </div>
+            <div class="media"> <a class="media-left" href="#"> <img class="media-object" src="http://img.stomp.com.sg/s3fs-public/styles/article_detail_fi_breakpoints_theme_bootstrap_screen-md-min_1x/public/images/2016/12/lorryerrantdriver.jpg?itok=ZiBVIrWB" alt=""> </a>
+                    <div class="media-body">
+                <div class="news-title">
+                        <h2 class="title-small"><a href="#">Rogue lorry driver continually drives on wrong lanes</a></h2>
+                      </div>
+                <div class="news-auther"><span class="time">1h ago</span></div>
+              </div>
+                  </div>
+          </div>
+                <div class="tab-pane" id="profile" role="tabpanel">
+            <div class="media"> <a class="media-left" href="#"> <img class="media-object" src="http://img.stomp.com.sg/s3fs-public/styles/article_detail_fi_breakpoints_theme_bootstrap_screen-md-min_1x/public/images/2016/12/lorryerrantdriver.jpg?itok=ZiBVIrWB" alt=""> </a>
+                    <div class="media-body">
+                <div class="news-title">
+                        <h2 class="title-small"><a href="#">Rogue lorry driver continually drives on wrong lanes</a></h2>
+                      </div>
+                <div class="news-auther"><span class="time">1h ago</span></div>
+              </div>
+                  </div>
+            <div class="media"> <a class="media-left" href="#"> <img class="media-object" src="http://img.stomp.com.sg/s3fs-public/styles/article_detail_fi_breakpoints_theme_bootstrap_screen-md-min_1x/public/images/2016/12/cake.jpg?itok=TOhcEG1S" alt=""> </a>
+                    <div class="media-body">
+                <div class="news-title">
+                        <h2 class="title-small"><a href="#">Girl ruins her own birthday by throwing cake on the floor</a></h2>
+                      </div>
+                <div class="news-auther"><span class="time">1h ago</span></div>
+              </div>
+                  </div>
+            <div class="media"> <a class="media-left" href="#"> <img class="media-object" src="http://img.stomp.com.sg/s3fs-public/styles/500_height/public/images/2016/12/lele-main.jpg?itok=2qC5Ad4x" alt=""> </a>
+                    <div class="media-body">
+                <div class="news-title">
+                        <h2 class="title-small"><a href="#">Defining success differently</a></h2>
+                      </div>
+                <div class="news-auther"><span class="time">1h ago</span></div>
+              </div>
+                  </div>
+          </div>
+                <div class="tab-pane" id="messages" role="tabpanel">
+            <div class="media"> <a class="media-left" href="#"> <img class="media-object" src="http://img.stomp.com.sg/s3fs-public/styles/500_height/public/images/2016/12/lele-main.jpg?itok=2qC5Ad4x" alt=""> </a>
+                    <div class="media-body">
+                <div class="news-title">
+                        <h2 class="title-small"><a href="#">Defining success differently</a></h2>
+                      </div>
+                <div class="news-auther"><span class="time">1h ago</span></div>
+              </div>
+                  </div>
+            <div class="media"> <a class="media-left" href="#"> <img class="media-object" src="http://img.stomp.com.sg/s3fs-public/styles/article_detail_fi_breakpoints_theme_bootstrap_screen-md-min_1x/public/images/2016/12/cake.jpg?itok=TOhcEG1S" alt=""> </a>
+                    <div class="media-body">
+                <div class="news-title">
+                        <h2 class="title-small"><a href="#">Girl ruins her own birthday by throwing cake on the floor</a></h2>
+                      </div>
+                <div class="news-auther"><span class="time">1h ago</span></div>
+              </div>
+                  </div>
+            <div class="media"> <a class="media-left" href="#"> <img class="media-object" src="http://img.stomp.com.sg/s3fs-public/styles/article_detail_fi_breakpoints_theme_bootstrap_screen-md-min_1x/public/images/2016/12/lorryerrantdriver.jpg?itok=ZiBVIrWB" alt=""> </a>
+                    <div class="media-body">
+                <div class="news-title">
+                        <h2 class="title-small"><a href="#">Rogue lorry driver continually drives on wrong lanes</a></h2>
+                      </div>
+                <div class="news-auther"><span class="time">1h ago</span></div>
+              </div>
+                  </div>
+          </div>
+              </div>
+        <div class="video-sec">
+                <h4 class="heading-small">Featured Video</h4>
+                <div class="video-block">
+            <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                  </div>
+          </div>
+              </div>
+      </aside>
+          </div>
+  </div>
+      </section>
+
+<!--footer start from here-->
+<footer>
+        <div class="container">
+    <div class="row">
+            <div class="col-xs-12 col-sm-5 col-md-4">
+        <h6 class="heading-footer">About Us</h6>
+        <p>SPH Digital News | AsiaOne Group</p>
+        <p>Copyright (c) 2016 Singapore Press Holdings Ltd. Co. Regn No. 198402868E </p>        
+                <p><a href="http://sph.com.sg/legal/website_tnc.html" target="_blank">Terms &amp; Conditions</a></p>
+                <p><a href="http://www.sph.com.sg/legal/pdpa.html" target="_blank">Personal Data Protection Statement</a></p>
+      </div>
+            <div class="col-xs-12 col-sm-3 col-md-4">
+        <h6 class="heading-footer">Get Your Free Stomp<br>
+        Mobile App</h6>
+        <ul class="footer-ul">
+                <a href="https://itunes.apple.com/sg/app/the-straits-times-stomp/id354084847?mt=8" target="_blank"><img src="http://img.stomp.com.sg/sites/all/themes/stomp/images/appstore.png"></a>
+            
+                <a href="https://play.google.com/store/apps/details?id=com.stomp" target="_blank"><img src="http://img.stomp.com.sg/sites/all/themes/stomp/images/googleplay.png"></a>
+              </ul>
+      </div>
+         
+            <div class="col-xs-12 col-sm-4 col-md-4 social-icons">
+        <h6 class="heading-footer">Follow Us</h6>
+        <ul class="footer-ul">
+                <li><a href="#"><i class=" fa fa-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class=" fa fa-twitter"></i> Twitter</a></li>
+                <li><a href="#"><i class=" fa fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class=" fa fa-whatsapp"></i> Whatsapp</a></li>
+                <li><a href="#"><i class=" fa fa-whatsapp"></i> Youtube</a></li>
+              </ul>
+      </div>
+          </div>
+  </div>
+      </footer>
+
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/core.js"></script> 
+<script src="js/lightbox-plus-jquery.min.js"></script> 
+
+</body>
+</html>
