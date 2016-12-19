@@ -1,1 +1,0 @@
-# stomp_project
